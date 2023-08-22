@@ -17,5 +17,13 @@ public:
 	}
 
 	void Update();
+
+	void resetBall();
+
+	int player1_score = 0;
+	int player2_score = 0;
+
+private:
+	int speedChoices[2] = { -1, 1 };
 };
 

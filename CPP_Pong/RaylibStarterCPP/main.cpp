@@ -15,6 +15,7 @@ Ball ball;
 Paddle p1(10);
 CPU p2;
 
+
 int main(int argc, char* argv[])
 {
     InitWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "My Pong Game!");
@@ -53,8 +54,8 @@ int main(int argc, char* argv[])
         ball.Draw();
         p1.Draw();
         p2.Draw();
-        /*DrawText(TextFormat("%i",player1_score), 40, 20, 80, WHITE);
-        DrawText(TextFormat("%i", player2_score), 40, 20, 80, WHITE);*/
+        DrawText(TextFormat("%i",ball.player1_score), WINDOW_WIDTH / 8 - 20, 20, 80, WHITE);
+        DrawText(TextFormat("%i", ball.player2_score), 3 * WINDOW_WIDTH / 8 - 20, 20, 80, WHITE);
 
         EndDrawing();
         //----------------------------------------------------------------------------------
