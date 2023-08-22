@@ -54,8 +54,8 @@ int main(int argc, char* argv[])
         ball.Draw();
         p1.Draw();
         p2.Draw();
-        DrawText(TextFormat("%i",ball.player1_score), WINDOW_WIDTH / 8 - 20, 20, 80, WHITE);
-        DrawText(TextFormat("%i", ball.player2_score), 3 * WINDOW_WIDTH / 8 - 20, 20, 80, WHITE);
+        DrawText(TextFormat("%i",ball.player1_score), WINDOW_WIDTH / 4 - 20, 20, 80, WHITE);
+        DrawText(TextFormat("%i", ball.player2_score), 3 * WINDOW_WIDTH / 4 - 20, 20, 80, WHITE);
 
         EndDrawing();
         //----------------------------------------------------------------------------------
