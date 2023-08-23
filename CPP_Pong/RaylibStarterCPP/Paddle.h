@@ -6,7 +6,7 @@ class Paddle
 {
 public:
 	Paddle();
-	Paddle(int x);
+	Paddle(int x, KeyboardKey up, KeyboardKey down);
 	~Paddle();
 
 	float m_x, y;
@@ -15,9 +15,11 @@ public:
 
 	void Draw();
 
-	void Update();
+	virtual void Update();
 
-	
+	KeyboardKey controls[2];
+
+	//void initialiseControls();
 
 protected:
 	void stayInBounds();

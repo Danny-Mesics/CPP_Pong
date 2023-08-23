@@ -1,8 +1,13 @@
 #pragma once
 #include "Paddle.h"
+class Ball;
+
 class CPU : public Paddle
 {
+protected:
+	Ball* ball;
 public:
-	void Update(int ball_y);
+	CPU(Ball* ball);
+	void Update() override;
 };
 
