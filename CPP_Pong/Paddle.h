@@ -21,9 +21,5 @@ public:
 
 protected:
 	void StayInBounds();
-
-	
-
-
 };
 
